@@ -170,3 +170,55 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY 1;
 
 select * from emp_info;
+
+-- List of managers per department
+SELECT dm.dept_no,
+	d.dept_name,
+	dm.emp_no,
+	ce.last_name,
+	ce.first_name,
+	dm.from_date,
+	dm.to_date
+-- INTO manager_info
+FROM dept_manager AS dm
+JOIN departments AS d
+	ON dm.dept_no = d.dept_no
+JOIN current_emp_retiring AS ce
+	ON dm.emp_no = ce.emp_no;
+
+
+-- Create table for retirees and dept names
+SELECT ce.emp_no,
+	ce.first_name,
+	ce.last_name,
+	d.dept_name
+INTO dept_info
+FROM current_emp_retiring AS ce
+JOIN dept_emp AS de
+	ON ce.emp_no = de.emp_no
+JOIN departments AS d
+	ON de.dept_no = d.dept_no;
+	
+-- relevant sales team info: employee+dept using retirement info
+SELECT r.emp_no, r.first_name, r.last_name, d.dept_name
+INTO retiree_depts
+FROM retirement_info AS r
+JOIN dept_emp AS de
+	ON r.emp_no = de.emp_no
+JOIN departments as d
+	ON de.dept_no = d.dept_no;
+	
+select * from retiree_depts;
+	
+--- COUNT above query
+SELECT d.dept_name, COUNT(*)
+INTO retiree_dept_counts
+FROM retirement_info AS r
+JOIN dept_emp AS de
+	ON r.emp_no = de.emp_no
+JOIN departments as d
+	ON de.dept_no = d.dept_no
+GROUP BY 1
+ORDER BY 2 DESC;
+
+select * from retiree_dept_counts;
