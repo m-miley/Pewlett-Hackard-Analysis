@@ -43,4 +43,4 @@ Senior Engineer is the biggest job title category that will see the most losses.
 
 #### Conclusion
 
-Smart planning will be vital to handling this "silver tsunami".  This analysis is a great place to start.  If necessary, I will be able to perform more grandular queries and figure out more information as needed.
+Smart planning will be vital to handling this "silver tsunami".  This analysis is a great place to start.  If necessary, I can perform more grandular queries and relay additional information as needed.
