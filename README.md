@@ -30,6 +30,7 @@ Reports showing first name, last name, birth date, title, and employee numbers a
     - unique_titles.csv
 
 Counts for retiring titles:
+
 ![Screen Shot 2022-05-03 at 5 16 05 PM](https://user-images.githubusercontent.com/100544761/166577121-2ee5c7f4-cda2-4ea1-9a4a-52aa6b253ffe.png)
 
 
@@ -39,7 +40,6 @@ According to our reports, 72,458 employees will be retiring over 4 years, leavin
 
 Senior Engineer is the biggest job title category that will see the most losses.  The open positioin to mentor ratio is 153:1.  So, let's target those mid-level engineers and get them ready to step into more senior positions and start recruiting from colleges and other competitors to find talent to fill the entry to mid level positions.  We should also check in with each department and see how many employees and types of positions needed.  This information is in the dept_title_count.csv report in the Data File.  A snapshot is as follows:
 
-![Screen Shot 2022-05-03 at 8 55 53 PM](https://user-images.githubusercontent.com/100544761/166614530-f6895c2a-ea4d-4f3b-8597-034ee99396e5.png)
-
+![Screen Shot 2022-05-03 at 9 14 12 PM](https://user-images.githubusercontent.com/100544761/166614836-7a3db931-1722-4cc4-9bdb-521561d4c37b.png)
 
 So, smart planning will be vital to handling this "silver tsunami".  This analysis is a great place to start.  If necessary, I will be able to perform more grandular queries and figure out more information as needed.
