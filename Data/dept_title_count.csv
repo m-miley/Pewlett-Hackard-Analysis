@@ -1,0 +1,39 @@
+"dept_name","title","count"
+"Customer Service","Senior Staff",3795
+"Customer Service","Staff",1164
+"Customer Service","Senior Engineer",545
+"Customer Service","Engineer",188
+"Customer Service","Technique Leader",64
+"Customer Service","Assistant Engineer",22
+"Development","Senior Engineer",12980
+"Development","Engineer",4679
+"Development","Technique Leader",1795
+"Development","Assistant Engineer",550
+"Development","Senior Staff",329
+"Development","Staff",118
+"Finance","Senior Staff",3226
+"Finance","Staff",973
+"Human Resources","Senior Staff",3315
+"Human Resources","Staff",1036
+"Marketing","Senior Staff",3701
+"Marketing","Staff",1115
+"Production","Senior Engineer",11256
+"Production","Engineer",3975
+"Production","Technique Leader",1597
+"Production","Assistant Engineer",467
+"Production","Senior Staff",390
+"Production","Staff",99
+"Quality Management","Senior Engineer",3142
+"Quality Management","Engineer",1149
+"Quality Management","Technique Leader",437
+"Quality Management","Assistant Engineer",137
+"Research","Senior Staff",3211
+"Research","Staff",981
+"Research","Senior Engineer",664
+"Research","Engineer",244
+"Research","Technique Leader",94
+"Research","Assistant Engineer",21
+"Research","Manager",1
+"Sales","Senior Staff",9663
+"Sales","Staff",2985
+"Sales","Manager",1

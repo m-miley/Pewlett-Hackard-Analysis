@@ -22,7 +22,7 @@ select *from retirement_titles;
 
 SELECT DISTINCT ON (emp_no) emp_no, first_name, last_name, title
 INTO unique_titles
-FROM employee_title
+FROM retirement_titles
 WHERE to_date = '9999-01-01'
 ORDER BY emp_no, to_date DESC;
 
@@ -56,3 +56,61 @@ WHERE de.to_date = '9999-01-01' AND (e.birth_date BETWEEN '1965-01-01' AND '1965
 ORDER BY e.emp_no, to_date DESC;
 
 select * from mentorship_eligibility;
+
+--------------------------------------- DEL 3 --------------------------------------------------------
+
+-- eligibility per title
+select title, count(*)
+from mentorship_eligibility
+group by title
+order by 2 desc;
+
+--count per title
+select * from retiring_titles;
+
+--Number of upcoming retirees
+select count(*) from unique_titles;
+
+-- Number of eligible mentors
+SELECT COUNT(*)
+FROM mentorship_eligibility;
+
+-- department name+number retiring
+SELECT e.dept_no, d.dept_name, e.count
+FROM employee_count_dept_retiring e
+JOIN departments d
+	on e.dept_no = d.dept_no
+ORDER BY 3 DESC;
+
+select * from emp_info;
+
+-- add salaries to the mix
+SELECT u.emp_no, u.first_name, u.last_name, u.title, s.salary 
+FROM unique_titles u
+JOIN salaries s
+	ON u.emp_no = s.emp_no;
+	
+--sum salaries
+SELECT sum(s.salary) 
+FROM unique_titles u
+JOIN salaries s
+	USING(emp_no);
+	
+-- dept name with unique titles
+SELECT u.emp_no, de.dept_no, d.dept_name, u.first_name, u.last_name, u.title
+FROM unique_titles u
+JOIN dept_emp de
+	ON u.emp_no = de.emp_no
+JOIN departments d
+	ON de.dept_no = d.dept_no;
+	
+--count of title, depts
+SELECT d.dept_name, u.title, COUNT(u.emp_no) count
+INTO dept_title_count
+FROM unique_titles u
+JOIN dept_emp de
+	ON u.emp_no = de.emp_no
+JOIN departments d
+	ON de.dept_no = d.dept_no
+GROUP BY 1, 2
+ORDER BY 1, 3 DESC;
