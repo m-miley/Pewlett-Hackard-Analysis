@@ -1,5 +1,6 @@
 # Pewlett-Hackard-Analysis
 Resources
+   
     - PostgreSQL
     - pgAdmin4
     - csv files
@@ -40,6 +41,6 @@ Senior Engineer is the biggest job title category that will see the most losses.
 
 ![Screen Shot 2022-05-03 at 9 17 06 PM](https://user-images.githubusercontent.com/100544761/166615048-cacff0e4-8545-49ca-bbdb-8bbf886cf584.png)
 
-### Conclusion
+#### Conclusion
 
 Smart planning will be vital to handling this "silver tsunami".  This analysis is a great place to start.  If necessary, I will be able to perform more grandular queries and figure out more information as needed.
