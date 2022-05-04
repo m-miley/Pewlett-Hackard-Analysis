@@ -60,3 +60,9 @@ Smart planning will be vital to handling this "silver tsunami".  This analysis i
  - employees.csv
  - salaries.csv
  - titles.csv
+
+
+ERD was built on Quick DBD open source website.
+All tables were created and csv files were manually imported into pgAdmin4.
+Additional tables were created from query results.
+All queries listed in Queries folder.
