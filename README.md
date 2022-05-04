@@ -38,8 +38,8 @@ According to our reports, 72,458 employees will be retiring over 4 years, leavin
 
 Senior Engineer is the biggest job title category that will see the most losses.  The open positioin to mentor ratio is 153:1.  So, let's target those mid-level engineers and get them ready to step into more senior positions and start recruiting from colleges and other competitors to find talent to fill the entry to mid level positions.  We should also check in with each department and see how many employees and types of positions needed.  This information is in the dept_title_count.csv report in the Data File.  A snapshot is as follows:
 
-![Screen Shot 2022-05-03 at 9 14 12 PM](https://user-images.githubusercontent.com/100544761/166614836-7a3db931-1722-4cc4-9bdb-521561d4c37b.png)
+![Screen Shot 2022-05-03 at 9 17 06 PM](https://user-images.githubusercontent.com/100544761/166615048-cacff0e4-8545-49ca-bbdb-8bbf886cf584.png)
 
 ### Conclusion
 
-So, smart planning will be vital to handling this "silver tsunami".  This analysis is a great place to start.  If necessary, I will be able to perform more grandular queries and figure out more information as needed.
+Smart planning will be vital to handling this "silver tsunami".  This analysis is a great place to start.  If necessary, I will be able to perform more grandular queries and figure out more information as needed.
